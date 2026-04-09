@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Order — DobaleWax Bespoke African Wax Print</title>
+  <meta name="description" content="Place your custom African wax print garment order. One piece minimum. Global shipping. Get a quote within 24 hours.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">◈</span>
+        <span class="logo-text">DobaleWax</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="fabrics.html">Fabrics</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="order.html" class="nav-cta">Custom Order</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-header" style="background: var(--terracotta);">
+    <div class="page-header-bg" style="background: var(--terracotta);"></div>
+    <div class="page-header-content">
+      <p class="section-tag" style="color: rgba(255,255,255,0.7);">Get Started</p>
+      <h1>Custom Order</h1>
+      <p>Tell us what you want. We'll get back to you within 24 hours with a quote.</p>
+    </div>
+  </div>
+
+  <section class="order-section" id="order">
+    <div class="order-inner">
+      <div class="order-header">
+        <p class="section-tag">Order Form</p>
+        <h2 class="section-title">Start Your Bespoke Piece</h2>
+        <p class="section-desc">Fill in the form below. We'll respond within 24 hours with a personalized quote and fabric options.</p>
+      </div>
+      <form class="order-form" id="orderForm" novalidate>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" placeholder="e.g. Amara Johnson" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="whatsapp">WhatsApp / Phone</label>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="+1 234 567 8900">
+          </div>
+          <div class="form-group">
+            <label for="country">Country / Region *</label>
+            <select id="country" name="country" required>
+              <option value="" disabled selected>Select your country</option>
+              <option>United States</option>
+              <option>United Kingdom</option>
+              <option>Canada</option>
+              <option>Australia</option>
+              <option>Nigeria</option>
+              <option>Ghana</option>
+              <option>Kenya</option>
+              <option>South Africa</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group form-full">
+            <label for="garmentType">Garment Type *</label>
+            <select id="garmentType" name="garmentType" required>
+              <option value="" disabled selected>What would you like to order?</option>
+              <option>Agbada (Men's ceremonial robe)</option>
+              <option>Dashiki Shirt</option>
+              <option>Gele (Head tie) + Iro (Wrapper) Set</option>
+              <option>Ankara Dress / Gown</option>
+              <option>Kente Blouse / Top</option>
+              <option>Bubu / Kaftan</option>
+              <option>Suit / Blazer</option>
+              <option>Other / Custom Design</option>
+            </select>
+          </div>
+          <div class="form-group form-full">
+            <label for="fabricPreference">Fabric Preference</label>
+            <select id="fabricPreference" name="fabricPreference">
+              <option value="" disabled selected>Choose if you have a preference</option>
+              <option>Realwax Classic (100% cotton)</option>
+              <option>Realwax Premium Holland (super-wax)</option>
+              <option>Ankara Print (digital cotton)</option>
+              <option>Kente Silk-Cotton (ceremonial)</option>
+              <option>Surprise me / Show me options</option>
+            </select>
+          </div>
+          <div class="form-group form-full">
+            <label for="styleNotes">Style Notes & Inspiration *</label>
+            <textarea id="styleNotes" name="styleNotes" rows="5" placeholder="Describe your garment in detail. Include: occasion, preferred colors or patterns, specific features (pockets, embroidery, sleeve length, neckline, etc.). The more detail, the better we can serve you." required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="bustChest">Bust / Chest (inches)</label>
+            <input type="text" id="bustChest" name="bustChest" placeholder="e.g. 38">
+          </div>
+          <div class="form-group">
+            <label for="waist">Waist (inches)</label>
+            <input type="text" id="waist" name="waist" placeholder="e.g. 32">
+          </div>
+          <div class="form-group">
+            <label for="height">Height (optional)</label>
+            <input type="text" id="height" name="height" placeholder="e.g. 5'6" or 168cm">
+          </div>
+          <div class="form-group">
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="50" value="1">
+          </div>
+        </div>
+        <div class="form-footer">
+          <div class="form-note"><span>🔒</span> Your information is private and secure. We never sell or share your data.</div>
+          <button type="submit" class="btn btn-submit" id="submitBtn">
+            <span class="btn-text">Submit Custom Order Request</span>
+            <span class="btn-loading" hidden><span class="spinner"></span> Sending...</span>
+          </button>
+        </div>
+      </form>
+      <div class="form-success" id="formSuccess" hidden>
+        <div class="success-icon">✓</div>
+        <h3>Order Request Received!</h3>
+        <p>Thank you! We've received your custom order details. Our team will review your request and get back to you within <strong>24 hours</strong> with a personalized quote and fabric options.</p>
+        <p class="success-sub">Check your email for confirmation. Questions? Reach us on WhatsApp anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">◈</span>
+        <span class="logo-text">DobaleWax</span>
+        <p>Bespoke African Wax Print garments. One piece at a time. Worldwide.</p>
+      </div>
+      <div class="footer-links">
+        <div class="fl-col">
+          <h4>Navigate</h4>
+          <a href="gallery.html">Gallery</a>
+          <a href="fabrics.html">Fabrics</a>
+          <a href="process.html">Process</a>
+          <a href="about.html">About</a>
+          <a href="order.html">Custom Order</a>
+        </div>
+        <div class="fl-col">
+          <h4>Contact</h4>
+          <a href="mailto:hello@dobalewax.com">hello@dobalewax.com</a>
+          <a href="#">WhatsApp Us</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 DobaleWax. All rights reserved. Realwax® is a registered trademark.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
